@@ -1,0 +1,100 @@
+body {
+    font-family: 'Lexend', "Deca", sans-serif;
+font-size: 15px;
+font-weight: 400;
+}
+main{
+    height: 100vh; 
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.overall{
+display: flex;
+flex-wrap: wrap;
+ margin: 0 auto;
+max-width: 1100px;
+width: 90%;
+align-items: center;
+justify-content: center;
+
+}
+
+.overall__item {
+    min-width:200px;
+    min-height:200px;
+    width: 200px;
+    height: 350px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{ 
+   color: hsl(0, 0%, 95%)
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.SUV {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+}
+
+.btn {
+  margin-top: auto;
+        background-color: transparent;
+        border-radius: 30px;
+        height: 40px;
+        padding: 10px;
+        color: hsl(0, 0%, 95%);
+        /* border-width: 2px;
+        border-style: solid;
+        border-color: white; */
+        border: 2px solid white;
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
+align-self: flex-start;
+        
+    }
+    @media screen and (max-width: 1150px) {
+        main {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .overall {
+ gap: 5px;
+        }
+           
+        .sedan, .SUV, .luxury {
+            border-radius: 10px;
+        }
+       }
+       
+       @media screen and (min-width: 1440px) {
+           .overall {
+      
+           }
+       }
+
+
+
+
+
